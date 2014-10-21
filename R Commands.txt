@@ -1,0 +1,102 @@
+## Setting up and quitting R
+
+install.packages("")		Install R package
+library("")			        Load R package
+swirl()				          Launch swirl
+	skip()			          Skip current swirl question
+	play()			          Experiment with R
+	nxt()			            Regain swirl's attention
+	bye()			            Exit swirl
+	main()			          Return to swirl's main menu
+	info()			          Displays swirl options
+rm(list=ls())           Remove assigned variables
+q()  			              Quit R
+
+## Finding and opening data
+
+setwd("C:/...")			    Set working directory
+dir.create(file.path(())Create directory
+read.table("filename")  Read tabular data 
+read.csv("filename")	  Read tabular data
+readLines			          Read lines of a text file 
+dir()				            Show files/folders in working directory
+list.files()            Show files in working directory
+download.file()         Load file into R working directory
+unzip()                 Unzip file
+source()			          Load code in selected file
+print()				          Print result
+
+## Exploring objects
+
+nrow("filename")  	    Show number of rows in table
+head()                  Return first six rows of object
+tail()                  Return last six rows of object
+dim()  			            Set or print dimensions of matrix
+colnames()              Set or print column names
+attributes()  		      Show attributes for object
+class()    		          Print class of object
+summary()               Show descriptive stats for object
+length()                Show length of specified column                
+names()				          Show column names
+complete.cases()        Show number of complete cases
+identical()             Check to see if objects are identical
+
+## Modifying objects
+
+?                       Show description
+<-  			              Assignment operator
+##				              Comment
+L				                Set object to integer
+c()				              Concatenate; create vectors of objects
+seq()                   Create a sequence of numbers
+rep()                   Rep(x,times=)
+vector()			          Create vector
+as.numeric()			      Coerce object to numeric (explicit coercion)
+cbind()				          Bind two vectors by column to create matrix
+rbind()				          Bind two vectors by row to create matrix
+matrix(#:#,nrow,ncol)   Create matrix column-wise
+  drop=FALSE            Return matrix rather than vector when subsetting matrix 
+list()				          Create list
+table()				          Show object count of variable
+factor()			          Create factor variable (e.g., "Male" for 1)
+level()			            Set factor levels (e.g., "Male", "Female")
+unclass()			          Show baseline class of variable
+is.na()				          Test objects for NA values
+is.nan()			          Test objects for not a number (NaN) values
+na.rm=                  Remove na values
+data.matrix()			      Convert data frame to matrix
+c("name",...)			      Assign names to objects in a vector
+name()			            Show object names in a vector
+
+## Subsetting
+
+$                       Extract elements of a list or data frame by name
+[]                      Extract multiple objects of same class as original
+[[]]                    Extract a single element of a list or data frame
+subset()                Subset using (data,condition) arguments
+
+## Functions and control structures
+
+!    		                Bang operator; generates opposite
+==                      Exact equality
+!=                      Inequality
+...                     Use default arguments in a function
+paste()                 Collapse/join elements of a vector
+mean()                  Generates mean of vector
+sd()                    Standard deviation
+rnorm()                 Random normal variable
+if, else if, else       Testing a condition
+for                     Execute a loop a fixed number of times
+while                   Execute a loop while a condition is true
+repeat                  Execute an infinite loop
+break                   Break the execution of a loop
+next                    Skip an interaction of a loop
+return                  Exit a function
+
+## Loop functions
+
+lapply                  Loop over a list and evaluate ftn. on each element
+apply                   Apply a ftn. over the margins of an array
+tapply                  Apply a ftn. over subsets of a vector
+mapply                  Multivariate version of lapply
+split                   Splits elements when using lapply

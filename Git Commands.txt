@@ -1,0 +1,28 @@
+pwd			Print working directory
+clear			Clear commands
+ls			List files and folders in the current directory
+ls -a			List hidden and unhidden files and folders
+ls -al 			List details for hidden and unhidden folders
+cd 			Change directory
+cd..			Move to home directory
+mkdir			Make directory (create new folder)
+touch			Create empty file
+cp			Copy
+rm			Remove
+mv			Move
+echo			Print arguments
+date			Today's date
+-m			Add message to a Git command
+git init		Create an empty Git repository
+git clone		Make a local copy of a forked repo
+git add .		Adds new files to a local repo
+git add -u		Updates tracking for files
+git add -A		Does both of the above
+git commit		Commit to save files as intermediate
+git remote add origin	Add remote repo
+git push <remote>	Push files to remote repo
+git push origin		Push files to origin
+
+git config --global.user.name "adampaulblair"
+git config --global.user.email "adampaulblair@gmail.com"
+git config --list
